@@ -1,35 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mekatron TR</title>
-  <style>
-    :root { --bg: #0B0B1A; --panel: #16163A; --text: #FFFFFF; --muted: #A5A8D6; --accent: #22D3EE; }
-    body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-    main { max-width: 640px; margin: 0 auto; padding: 48px 16px; }
-    h1 { margin: 0 0 8px; font-size: 32px; }
-    p { color: var(--muted); line-height: 1.6; }
-    .app { background: var(--panel); border-radius: 16px; padding: 20px; margin-top: 24px; }
-    .app h2 { margin: 0 0 8px; font-size: 22px; }
-    a { color: var(--accent); }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mekatron TR</title>
+<style>
+  :root {
+    --bg: #0B0B1A;
+    --panel: #16163A;
+    --text: #FFFFFF;
+    --muted: #A5A8D6;
+    --accent: #22D3EE;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 40px 16px 64px;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 32px; margin: 0 0 4px; }
+  p { color: var(--muted); line-height: 1.6; }
+  h2.bolum {
+    font-size: 14px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 40px 0 12px;
+  }
+  .app {
+    background: var(--panel);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .app h3 { font-size: 22px; margin: 0 0 4px; }
+  .app p { margin: 0 0 12px; }
+  .app .baglantilar { margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .ayirac { color: var(--muted); margin: 0 8px; }
+  footer { margin-top: 40px; }
+</style>
 </head>
 <body>
-  <main>
-    <h1>Mekatron TR</h1>
-    <p>Mobil oyun geliştiricisi · Mobile game developer</p>
+<main>
+  <h1>Mekatron TR</h1>
+  <p>Mobil oyun geliştiricisi &middot; Mobile game developer</p>
 
-    <div class="app">
-      <h2>Lumoku: Blok Bulmaca</h2>
-      <p>Neon blok bulmaca oyunu · Neon block puzzle game</p>
-      <p>
-        <a href="https://play.google.com/store/apps/details?id=com.mekatrontr.lumoku">Google Play</a> ·
-        <a href="https://mekatron28.github.io/lumoku-privacy/">Gizlilik Politikası / Privacy Policy</a>
-      </p>
-    </div>
+  <h2 class="bolum">Oyunlar / Games</h2>
 
-    <p style="margin-top:32px">İletişim / Contact: <a href="mailto:mekatronturk@gmail.com">mekatronturk@gmail.com</a></p>
-  </main>
+  <div class="app">
+    <h3>Başkan: Türkiye 2026</h3>
+    <p>Ülke yönetme simülasyonu &middot; Country management simulation</p>
+    <p class="baglantilar">
+      <a href="https://play.google.com/store/apps/details?id=com.baskan.turkiye2026">Google Play</a>
+      <span class="ayirac">&middot;</span>
+      <a href="https://sites.google.com/view/baskan-turkiye-2026-gizlilik/ana-sayfa">Gizlilik Politikası / Privacy Policy</a>
+    </p>
+  </div>
+
+  <div class="app">
+    <h3>Lumoku: Blok Bulmaca</h3>
+    <p>Neon blok bulmaca oyunu &middot; Neon block puzzle game</p>
+    <p class="baglantilar">
+      <a href="https://play.google.com/store/apps/details?id=com.mekatrontr.lumoku">Google Play</a>
+      <span class="ayirac">&middot;</span>
+      <a href="https://mekatron28.github.io/lumoku-privacy/">Gizlilik Politikası / Privacy Policy</a>
+    </p>
+  </div>
+
+  <h2 class="bolum">Uygulamalar / Apps</h2>
+
+  <div class="app">
+    <h3>ePuantaj &mdash; Puantaj Takip</h3>
+    <p>Çalışma günü ve puantaj takibi &middot; Work day and timesheet tracking</p>
+    <p class="baglantilar">
+      <a href="https://play.google.com/store/apps/details?id=tr.epuantaj.app">Google Play</a>
+    </p>
+  </div>
+
+  <footer>
+    <p>İletişim / Contact: <a href="mailto:mekatronturk@gmail.com">mekatronturk@gmail.com</a></p>
+  </footer>
+</main>
 </body>
 </html>
